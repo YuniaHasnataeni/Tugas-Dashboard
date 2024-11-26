@@ -1,48 +1,47 @@
-# Tugas-Dashboard
-# Asosiasi Dua Peubah Kategorik
+# Statistika Deskriptif - Regresi Linier Sederhana - Analisis Tren
 
-[Tentang](#scroll-tentang)
-•
-[Demo](#dvd-demo)
+[Tentang](#information_source-tentang)
 •
 [Dokumentasi](#blue_book-dokumentasi)
 •
-[Sumber Data](#heavy_check_mark-deskripsi-data)
+[Dataset](#bar_chart-Dataset)
 •
-[Tim Pengembang](#smiley_cat-tim-pengembang)
+[Demo](#link-Demo)
+•
+[Referensi](#bookmark_tabs-Referensi)
+•
+[Tim Pengembang](#busts_in_silhouette-tim)
 •
 
 </div>
 
-## :scroll: Tentang
-Asosiasi dua variabel kategorik adalah hubungan antara dua variabel yang masing-masing memiliki dua atau lebih kategori. Hubungan ini dapat berupa hubungan searah, berlawanan arah, atau tidak berhubungan sama sekali.
+## :information_source: Tentang
+Statistik Deskriptif bertujuan untuk menggambarkan data secara ringkas dan memberikan gambaran umum mengenai distribusi dan karakteristik utama data, antara lain: nilai Mean, Median, nilai Minimal dan Maksimal, kuartil (Q1 dan Q3), dan Rentang Interkuartil (IQR).
+- Nilai Rata-rata (Mean): Merupakan nilai pusat data yang diperoleh dari jumlah seluruh data dibagi jumlah data.
+- Median: Nilai tengah dalam dataset yang telah diurutkan.
+- Nilai Minimal dan Maksimal: Menunjukkan nilai terkecil dan terbesar dalam data, memberikan gambaran mengenai rentang data.
+- Kuartil (Q1 dan Q3): Membagi data yang telah diurutkan menjadi empat bagian yang sama besar. Kuartil pertama (Q1) menunjukkan nilai pada 25% pertama data, sementara kuartil ketiga (Q3) menunjukkan nilai pada 75% pertama data.
+- Rentang Interkuartil (IQR): Selisih antara Q3 dan Q1 yang menggambarkan penyebaran data tanpa dipengaruhi oleh pencilan (outliers).
 
-Untuk menguji ada atau tidaknya asosiasi antara dua variabel kategorik, dapat dilakukan dengan menggunakan uji statistik, seperti uji chi-square. Uji chi-square digunakan untuk menguji apakah frekuensi observasi pada tabel kontingensi berbeda secara signifikan dari frekuensi harapan.
+Regresi linier sederhana digunakan untuk menganalisis hubungan antara satu variabel independen (bebas) dengan satu variabel dependen (terikat). Tujuan dari regresi linier sederhana adalah untuk memodelkan hubungan linier antara dua variabel dan membuat prediksi berdasarkan hubungan tersebut.
+Model Regresi Linier Sederhana:
+            Y = β₀ + β₁X + ϵ
+Asumsi Model Linier:
+- Bentuk hubungannya linier
+- Sisaan adalah peubah acak yang bebas terhadap nilai X
+- Sisaan merupakan peubah acak yang menyebar Normal dengan rataan nol dan ragam yang konstan (homoskedastisitas).
+- Sisaan tidak berkorelasi satu sama lain.
 
-Jika hasil uji chi-square signifikan, maka dapat disimpulkan bahwa terdapat asosiasi antara dua variabel kategorik tersebut. Untuk mengukur kekuatan asosiasi tersebut, dapat digunakan berbagai ukuran asosiasi, seperti odds ratio, relative risk, atau koefisien gamma.
+Analisi tren berfokus pada mempelajari perubahan data seiring waktu untuk mengidentifikasi pola atau arah pergerakan data. Teknik ini digunakan untuk menganalisis bagaimana suatu variabel berubah dari waktu ke waktu dan untuk meramalkan nilai masa depan berdasarkan tren yang teridentifikasi.
+Jenis Analisis Tren:
+* Tren Naik: Data yang menunjukkan peningkatan secara konsisten.
+* Tren Turun: Data yang menunjukkan penurunan secara konsisten.
+* Fluktuasi: Perubahan yang tidak mengikuti pola tetap, tetapi menunjukkan variasi yang terjadi secara acak.
+Aplikasi: Analisis tren sering digunakan untuk memproyeksikan permintaan produk susu dan turunannya berdasarkan data penjualan historis. Selain itu, analisis tren dapat digunakan untuk memprediksi perubahan harga per unit produk di masa depan, memberikan wawasan yang relevan untuk pengambilan keputusan bisnis dalam rantai pasok dan pemasaran produk-produk dairy.
 
-Berikut adalah beberapa contoh asosiasi antara dua variabel kategorik:
+## :blue_book: Dokumentasi
 
-* Hubungan antara jenis kelamin dan pekerjaan.
-* Hubungan antara tingkat pendidikan dan penghasilan.
-* Hubungan antara ras dan tingkat kriminalitas.
-
-Berikut adalah beberapa ukuran asosiasi yang dapat digunakan untuk mengukur asosiasi antara dua variabel kategorik:
-
-* **Odds ratio** (OR) adalah ukuran asosiasi yang mengukur perbandingan peluang terjadinya suatu kejadian pada satu kelompok dengan peluang terjadinya kejadian tersebut pada kelompok lain.
-* **Relative risk** (RR) adalah ukuran asosiasi yang mengukur perbandingan risiko terjadinya suatu kejadian pada satu kelompok dengan risiko terjadinya kejadian tersebut pada kelompok lain.
-
-Ukuran asosiasi yang digunakan akan tergantung pada jenis asosiasi yang ingin diukur.
-
-## :dvd: Demo
-
-Berikut merupakan link untuk shinnyapps atau dashboard dari project kami:
-
-https://rismandwij.shinyapps.io/AsosiasiDuaPeubahKategorik/
-
-## :blue_book: Dokumentasi 
-
-## Penjelasan singkat masing-masing library yang digunakan:
+### Penjelasan singkat masing-masing library yang digunakan:
 
 **1. shiny:**
 
@@ -76,25 +75,74 @@ https://rismandwij.shinyapps.io/AsosiasiDuaPeubahKategorik/
 
 * Paket knitr adalah ekstensi dari markdown untuk menulis dokumen yang menggabungkan kode R dan teks. Kode R akan dieksekusi dan hasilnya akan ditampilkan dalam dokumen output. Ini berguna untuk membuat laporan, presentasi, dan blog yang berisi kode R dan hasil eksekusi.
 
-## :heavy_check_mark: Sumber Data
-1. Forikes, T. S. (2021). 1053-4033-1-Pb. 12(2), 48–52.
-2. Hidayati, D. R., Yuliati, Y., & Pratiwi, K. R. (2017). Hubungan Asupan Lemak Dengan Kadar Trigliserida Dan Indeks Massa Tubuh Sivitas Akademika Uny. Kingdom (The Journal of Biological Studies), 6(1), 25–33. https://doi.org/10.21831/kingdom.v6i1.6055
-3. Permatasari, N. D., Fajar, A., Nurhaeni, S., Rahmawati, M., & Ramdhani, P. (2023). Hubungan Asosiasi Antara Inner Child Dengan Keharmonisan Keluarga : Pendekatan Menggunakan Uji Chi-Square ( Uji Kebebasan ). 3, 5339–5349.
-4. Saranani, M., & Ulyasniati. (2022). Hubungan antara dinamika kelompok tani dengan tingkat penerapan teknologi pada usaha tani kakao di desa silea kecamatan onembute kabupaten konawe. Jurnal Ilmiah Multidisiplin, 1(2), 174–185.
-5. Sarwoko, S. (2023). Hubungan Antara Frekuensi Makan Dan Jenis Makanan Dengan Kejadian Gastritis. Cendekia Medika: Jurnal Stikes Al-Ma`arif Baturaja, 8(2), 386–392. https://doi.org/10.52235/cendekiamedika.v8i2.266
-6. Sutomo, A. H., & Suwarni, A. (2004). Kadar Mercury Dalam Rambut Dan Kesehatan Nelayan Di Pantai Kenjeran Surabaya. Journal Teknik Lingkungan P3TL-BPPT, 5(1), 17–24.
+## :bar_chart: Dataset
+### Dataset Penjualan Produk Susu
+
+**Dataset Penjualan Produk Susu** adalah kumpulan data yang komprehensif yang berisi informasi detail mengenai peternakan sapi perah, produk susu, penjualan, dan manajemen persediaan. Dataset ini dapat digunakan untuk analisis tren, peramalan permintaan, dan optimasi persediaan. Berikut adalah fitur dan karakteristik dari dataset ini:
+
+### **Variabel yang Digunakan**
+
+### **Variabel Terikat**
+**Nilai Total**  
+- Deskripsi: Total nilai produk susu berdasarkan kuantitas yang tersedia.  
+- **Tipe**: Numerik (kontinu).  
+Variabel ini menjadi target analisis untuk memahami faktor-faktor yang memengaruhi nilai total produk susu.
+### **Variabel Bebas**
+
+| **Fitur**                        | **Deskripsi**                                                                                      |
+|----------------------------------|----------------------------------------------------------------------------------------------------|
+| **Lokasi**                       | Lokasi geografis peternakan sapi perah                                                          |
+| **Nama Produk**                  | Nama produk susu (misalnya, susu, yogurt, keju)                                                  |
+| **Merek**                        | Nama merek yang memproduksi produk susu                                                          |
+| **Jumlah (liter/kg)**            | Jumlah produk susu yang tersedia                                                                 |
+| **Harga per Unit**               | Harga satuan produk susu                                                                         |
+| **Jumlah Terjual (liter/kg)**    | Kuantitas produk susu yang telah terjual                                                         |
+| **Harga per Unit (terjual)**     | Harga aktual produk susu pada saat penjualan                                                     |
+| **Jumlah Stok (liter/kg)**       | Kuantitas produk susu yang masih tersedia di gudang                                              |
+| **Batas Minimum Stok (liter/kg)**| Batas minimum stok untuk menghindari kekurangan produk                                           |
+| **Date**                         | Tanggal pencatatan data                                                                  |
+| **Ukuran Peternakan (sq.km)**     | Ukuran fisik peternakan dalam kilometer persegi.                        |
+| **Kondisi Penyimpanan**       | Kondisi penyimpanan yang disarankan untuk produk susu.        |
+| **Luas Lahan (acre)**         | Luas total lahan yang ditempati oleh peternakan sapi perah.   |
+| **Saluran Penjualan**         | Saluran melalui mana produk susu dijual (Retail, Grosir, Online). |
+| **Jumlah Sapi**               | Jumlah sapi yang ada di peternakan sapi perah.                |
+
+---
+
+### Cara Mengakses Dataset
+Dataset ini dapat diakses melalui [tautan ini](https://www.kaggle.com/datasets/suraj520/dairy-goods-sales-dataset).
+
+---
+
+
+## :linkk: Demo
+
+Berikut merupakan link untuk shinnyapps atau dashboard dari project kami:
+
+https://rismandwij.shinyapps.io/AsosiasiDuaPeubahKategorik/
+
+
+## :bookmark_tabs: Referensi
+1. Iskandar, I., & Sutrisno, A. (2021). "Analisis Pengaruh Harga dan Pendapatan terhadap Permintaan Barang dengan Regresi Linier Sederhana". Jurnal Ekonomi dan Manajemen 15(3), 234-245.
+2. Kusuma, P. D., & Nugroho, B. (2018). "Analisis Tren Penurunan Tingkat Pengangguran di Indonesia Menggunakan Metode Peramalan". Jurnal Analisis Sosial dan Ekonomi 7(1), 99-109.
+3. Rifai, A. (2019). "Penerapan Statistik Deskriptif dalam Analisis Data Penjualan Produk". Jurnal Ilmu dan Teknologi 4(1), 45-52.
+4. Suraj. (2021). Dairy Goods Sales Dataset. Kaggle. https://www.kaggle.com/datasets/suraj520/dairy-goods-sales-dataset 
 
 
 
-## :smiley_cat: Tim Pengembang
+## :busts_in_silhouette: Tim Pengembang
 ### Dosen Pengampu :
-1. Dr. Ir. Erfiani, M.Si
-2. Gerry Alfa Dito, M.Si
-3. Alfa Nugraha Pradana, S.Komp
+1. Dr. Anwar Fitrianto, S.Si., M.Sc.
+2. Dr. Ir. Erfiani, M.Si
+4. L.M Risman Dwi Jumansyah S.Stat
 ### Kelompok Mahasiswa :
-1. L.M Risman Dwi Jumansyah S.Stat (G1501222058)
-2. Ainun Salsabila, S.Stat (G1501222038)
-3. Megawati, S.Si (G1501221026)
+1. Yunia Hasnataeni (G1501231001)
+2. Kevin Alifviansyah (G1501231018)
+3. Rafika Aristawidya (G1501231065)
+
+
+
+
 
 
 
