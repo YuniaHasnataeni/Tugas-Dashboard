@@ -1,5 +1,5 @@
-<p align="center" width="120%">
-    <img width="120%" src="https://github.com/YuniaHasnataeni/Tugas-Dashboard/blob/main/Gambar/Logo.png">
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/YuniaHasnataeni/Tugas-Dashboard/blob/main/Gambar/Dairy Goods.png">
 </p>
 
 <div align="center">
