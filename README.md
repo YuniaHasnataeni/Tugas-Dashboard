@@ -84,11 +84,7 @@ Analisis tren sering digunakan untuk memproyeksikan permintaan produk susu dan t
 
 ## :blue_book: Dokumentasi
 
-# Aplikasi Dashboard Penjualan Produk Susu
-
-Aplikasi ini dibangun menggunakan R dan Shiny untuk menyediakan dashboard interaktif yang menampilkan analisis penjualan produk susu berdasarkan berbagai variabel. Aplikasi ini juga dilengkapi dengan analisis regresi, pengujian asumsi, dan analisis tren.
-
-## Penjelasan Mengenai Library yang Digunakan
+### Penjelasan Mengenai Library yang Digunakan
 
 Aplikasi ini menggunakan beberapa library R untuk manipulasi data, visualisasi, dan analisis statistik:
 
@@ -117,7 +113,7 @@ Aplikasi ini menggunakan beberapa library R untuk manipulasi data, visualisasi, 
 Variabel ini menjadi target analisis untuk memahami faktor-faktor yang memengaruhi nilai total produk susu.
 ### **Variabel Bebas**
 
-| **Fitur**                        | **Deskripsi**                                                                                      |
+| **Variabel**                        | **Deskripsi**                                                                                      |
 |----------------------------------|----------------------------------------------------------------------------------------------------|
 | **Lokasi**                       | Lokasi geografis peternakan sapi perah                                                          |
 | **Nama Produk**                  | Nama produk susu (misalnya, susu, yogurt, keju)                                                  |
