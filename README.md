@@ -22,64 +22,86 @@
 </div>
 
 ## :information_source: Tentang
-Statistik Deskriptif bertujuan untuk menggambarkan data secara ringkas dan memberikan gambaran umum mengenai distribusi dan karakteristik utama data, antara lain: nilai Mean, Median, nilai Minimal dan Maksimal, kuartil (Q1 dan Q3), dan Rentang Interkuartil (IQR).
-- Nilai Rata-rata (Mean): Merupakan nilai pusat data yang diperoleh dari jumlah seluruh data dibagi jumlah data.
-- Median: Nilai tengah dalam dataset yang telah diurutkan.
-- Nilai Minimal dan Maksimal: Menunjukkan nilai terkecil dan terbesar dalam data, memberikan gambaran mengenai rentang data.
-- Kuartil (Q1 dan Q3): Membagi data yang telah diurutkan menjadi empat bagian yang sama besar. Kuartil pertama (Q1) menunjukkan nilai pada 25% pertama data, sementara kuartil ketiga (Q3) menunjukkan nilai pada 75% pertama data.
-- Rentang Interkuartil (IQR): Selisih antara Q3 dan Q1 yang menggambarkan penyebaran data tanpa dipengaruhi oleh pencilan (outliers).
+## Aplikasi Dashboard Penjualan Produk Susu
+Aplikasi ini bertujuan untuk melakukan analisis deskriptif, regresi linier sederhana, dan analisis tren terhadap data penjualan produk susu. Dashboard ini menyediakan visualisasi interaktif untuk mempermudah pengguna dalam menganalisis distribusi, hubungan antar variabel, dan tren yang terjadi pada data penjualan susu.
 
-Regresi linier sederhana digunakan untuk menganalisis hubungan antara satu variabel independen (bebas) dengan satu variabel dependen (terikat). Tujuan dari regresi linier sederhana adalah untuk memodelkan hubungan linier antara dua variabel dan membuat prediksi berdasarkan hubungan tersebut.
-Model Regresi Linier Sederhana:
-            Y = β₀ + β₁X + ϵ
-Asumsi Model Linier:
-- Bentuk hubungannya linier
-- Sisaan adalah peubah acak yang bebas terhadap nilai X
-- Sisaan merupakan peubah acak yang menyebar Normal dengan rataan nol dan ragam yang konstan (homoskedastisitas).
-- Sisaan tidak berkorelasi satu sama lain.
+## Statistik Deskriptif
+Statistik deskriptif digunakan untuk menggambarkan data secara ringkas dan memberikan gambaran umum mengenai distribusi serta karakteristik utama dari data. Beberapa elemen statistik deskriptif yang penting antara lain:
+### 1. Nilai Rata-rata (Mean)
+Nilai rata-rata adalah nilai pusat data yang diperoleh dari jumlah seluruh data dibagi dengan jumlah data. Rata-rata memberikan gambaran umum mengenai tingkat pusat distribusi data.
+### 2. Median
+Median adalah nilai tengah dalam dataset yang telah diurutkan. Jika dataset memiliki jumlah elemen yang ganjil, median adalah nilai yang berada di tengah. Jika jumlah elemen genap, median dihitung sebagai rata-rata dari dua nilai tengah.
+### 3. Nilai Minimal dan Maksimal
+Nilai minimal menunjukkan nilai terkecil dalam dataset, sementara nilai maksimal menunjukkan nilai terbesar. Keduanya memberikan gambaran mengenai rentang data yang ada.
+### 4. Kuartil (Q1 dan Q3)
+Kuartil membagi data yang telah diurutkan menjadi empat bagian yang sama besar:
+- **Kuartil pertama (Q1)**: Nilai yang memisahkan 25% data pertama.
+- **Kuartil ketiga (Q3)**: Nilai yang memisahkan 75% data pertama.
+### 5. Rentang Interkuartil (IQR)
+IQR adalah selisih antara Q3 dan Q1 dan memberikan gambaran tentang penyebaran data. Rentang ini mengabaikan pengaruh pencilan (outliers) karena hanya melibatkan data antara Q1 dan Q3.
 
-Analisi tren berfokus pada mempelajari perubahan data seiring waktu untuk mengidentifikasi pola atau arah pergerakan data. Teknik ini digunakan untuk menganalisis bagaimana suatu variabel berubah dari waktu ke waktu dan untuk meramalkan nilai masa depan berdasarkan tren yang teridentifikasi.
-Jenis Analisis Tren:
-* Tren Naik: Data yang menunjukkan peningkatan secara konsisten.
-* Tren Turun: Data yang menunjukkan penurunan secara konsisten.
-* Fluktuasi: Perubahan yang tidak mengikuti pola tetap, tetapi menunjukkan variasi yang terjadi secara acak.
-Aplikasi: Analisis tren sering digunakan untuk memproyeksikan permintaan produk susu dan turunannya berdasarkan data penjualan historis. Selain itu, analisis tren dapat digunakan untuk memprediksi perubahan harga per unit produk di masa depan, memberikan wawasan yang relevan untuk pengambilan keputusan bisnis dalam rantai pasok dan pemasaran produk-produk dairy.
+---
+
+## Regresi Linier Sederhana
+
+Regresi linier sederhana digunakan untuk menganalisis hubungan antara satu variabel independen (X) dan satu variabel dependen (Y). Tujuannya adalah untuk memodelkan hubungan linier antara kedua variabel tersebut dan membuat prediksi berdasarkan hubungan yang teridentifikasi.
+
+### Model Regresi Linier Sederhana
+Model regresi linier sederhana dapat dituliskan sebagai:
+
+            Y = β₀ + β₁X + ϵ 
+
+
+Di mana:
+- **Y** = Variabel dependen (terikat)
+- **X** = Variabel independen (bebas)
+- **β₀** = Intersep (nilai Y ketika X = 0)
+- **β₁** = Koefisien regresi (kemiringan garis yang menunjukkan perubahan Y per perubahan satu unit X)
+- **ϵ** = Sisaan (residual) atau error term, yang merepresentasikan variasi dalam Y yang tidak dijelaskan oleh X
+
+### Asumsi Model Regresi Linier
+Model regresi linier sederhana mengasumsikan bahwa:
+1. **Bentuk Hubungan Linier**: Hubungan antara variabel dependen (Y) dan independen (X) bersifat linier.
+2. **Sisaan (Residual)** adalah peubah acak yang bebas terhadap nilai X, yang berarti tidak ada pola tertentu antara sisaan dan nilai X.
+3. **Normalitas Sisaan**: Sisaan (ϵ) menyebar secara normal dengan rata-rata nol dan varians yang konstan (homoskedastisitas). Hal ini penting untuk memastikan bahwa hasil uji signifikansi model dapat dipercaya.
+4. **Tidak Ada Autokorelasi**: Sisaan tidak berkorelasi satu sama lain (tidak ada pola yang muncul pada sisaan di waktu atau urutan tertentu).
+
+---
+
+## Analisis Tren
+
+Analisis tren digunakan untuk mempelajari perubahan data seiring waktu guna mengidentifikasi pola atau arah pergerakan data. Analisis ini dapat membantu dalam meramalkan nilai masa depan berdasarkan tren yang teridentifikasi dalam data historis.
+
+### Jenis-jenis Analisis Tren:
+- **Tren Naik**: Data yang menunjukkan peningkatan secara konsisten seiring waktu.
+- **Tren Turun**: Data yang menunjukkan penurunan secara konsisten seiring waktu.
+- **Fluktuasi**: Perubahan yang tidak mengikuti pola tetap, tetapi menunjukkan variasi acak.
+
+### Aplikasi Analisis Tren
+Analisis tren sering digunakan untuk memproyeksikan permintaan produk susu dan turunannya berdasarkan data penjualan historis. Selain itu, analisis tren dapat digunakan untuk memprediksi perubahan harga per unit produk susu di masa depan, memberikan wawasan yang relevan untuk pengambilan keputusan bisnis dalam rantai pasok dan pemasaran produk-produk dairy.
+
+---
 
 ## :blue_book: Dokumentasi
 
-### Penjelasan singkat masing-masing library yang digunakan:
+# Aplikasi Dashboard Penjualan Produk Susu
 
-**1. shiny:**
+Aplikasi ini dibangun menggunakan R dan Shiny untuk menyediakan dashboard interaktif yang menampilkan analisis penjualan produk susu berdasarkan berbagai variabel. Aplikasi ini juga dilengkapi dengan analisis regresi, pengujian asumsi, dan analisis tren.
 
-* Paket shiny digunakan untuk membuat aplikasi web interaktif dengan R. Anda dapat membuat berbagai macam aplikasi, seperti dashboard, visualisasi data, dan alat interaktif lainnya.
+## Penjelasan Mengenai Library yang Digunakan
 
-**2. sjPlot:**
+Aplikasi ini menggunakan beberapa library R untuk manipulasi data, visualisasi, dan analisis statistik:
 
-* Paket sjPlot adalah extension dari ggplot2 untuk membuat grafik dan visualisasi data statistik yang lebih spesifik. Sangat berguna untuk membuat publikasi ilmiah, presentasi, dan laporan.
+1. **`shiny`**: Library utama untuk membangun aplikasi web interaktif menggunakan R. `shiny` memungkinkan pembuatan antarmuka pengguna (UI) dan logika server dalam satu aplikasi yang dapat digunakan secara real-time.
+2. **`shinythemes`**: Menyediakan berbagai tema untuk aplikasi Shiny, memungkinkan tampilan UI yang lebih menarik dan konsisten tanpa memerlukan CSS tambahan. `shinythemes` memudahkan desain antarmuka dengan memilih tema siap pakai seperti "flatly", "cerulean", dan lainnya.
+3. **`dplyr`**: Salah satu package dalam **tidyverse** yang sangat berguna untuk manipulasi data. `dplyr` menyediakan fungsi yang efisien dan intuitif untuk memfilter, mengurutkan, mengelompokkan, dan merangkum data dalam bentuk yang mudah dipahami.
+4. **`highcharter`**: Library untuk membuat visualisasi interaktif menggunakan grafik Highcharts. `highcharter` memungkinkan pembuatan berbagai jenis grafik interaktif yang dapat digunakan di aplikasi Shiny untuk memvisualisasikan data secara dinamis.
+5. **`DT`**: Paket untuk menampilkan data dalam bentuk tabel interaktif menggunakan **DataTables**. Tabel ini mendukung fitur pencarian, pengurutan, dan penyesuaian kolom secara langsung dalam antarmuka pengguna.
+6. **`lubridate`**: Package yang sangat berguna untuk manipulasi dan analisis data waktu (tanggal dan waktu). `lubridate` memungkinkan pemrosesan tanggal dan waktu dengan cara yang lebih mudah dan efisien dibandingkan dengan fungsi dasar R.
+7. **`lmtest`**: Paket untuk melakukan uji statistik pada model regresi. `lmtest` digunakan untuk menguji asumsi-asumsi dalam model regresi, seperti uji heteroskedastisitas, normalitas residual, dan lain-lain.
+8. **`car`**: Paket untuk analisis regresi dan evaluasi asumsi model. `car` menyediakan berbagai fungsi untuk uji diagnostik regresi, seperti uji multikolinearitas, uji linearitas, dan alat lainnya untuk mengevaluasi kualitas model regresi.
 
-**3. plotly:**
-
-* Paket plotly digunakan untuk membuat visualisasi data interaktif menggunakan JavaScript library. Grafik yang dihasilkan dapat di-zoom, dipan, dan diputar untuk melihat data dari berbagai sudut.
-
-**4. rhandsontable:**
-
-* Paket rhandsontable menyediakan fungsi untuk membuat spreadsheet interaktif yang dapat digunakan dalam aplikasi web shiny. Spreadsheet ini dapat diedit oleh pengguna, dan perubahan yang dibuat akan direfleksikan di data yang diproses oleh aplikasi.
-
-**5. tidyverse:**
-
-* Tidyverse adalah kumpulan paket yang bekerja bersama-sama untuk manipulasi, cleaning, dan analisis data. Paket ini menyediakan berbagai fungsi untuk membuat kode R lebih ringkas dan mudah dibaca.
-
-**6. epitoools:**
-
-* Paket epitoools adalah kumpulan fungsi untuk epidemiologi dan statistik kesehatan. Paket ini menyediakan berbagai fungsi untuk menghitung ukuran asosiasi, uji hipotesis, dan analisis data epidemiologi.
-
-**7. markdown:**
-
-* Paket markdown digunakan untuk menulis dokumen yang dapat dikonversi ke berbagai format, seperti HTML, PDF, dan Word. Ini berguna untuk membuat laporan, presentasi, dan dokumentasi.
-
-**8. knitr:**
-
-* Paket knitr adalah ekstensi dari markdown untuk menulis dokumen yang menggabungkan kode R dan teks. Kode R akan dieksekusi dan hasilnya akan ditampilkan dalam dokumen output. Ini berguna untuk membuat laporan, presentasi, dan blog yang berisi kode R dan hasil eksekusi.
+---
 
 ## :bar_chart: Dataset
 ### Dataset Penjualan Produk Susu
@@ -123,10 +145,10 @@ Dataset ini dapat diakses melalui [tautan ini](https://www.kaggle.com/datasets/s
 
 ## :link: Demo
 
-Berikut merupakan link untuk shinnyapps atau dashboard dari project kami:
+Berikut merupakan link untuk shinnyapps atau dashboard dari project kami: 
 
 
-
+---
 
 ## :bookmark_tabs: Referensi
 1. Iskandar, I., & Sutrisno, A. (2021). "Analisis Pengaruh Harga dan Pendapatan terhadap Permintaan Barang dengan Regresi Linier Sederhana". Jurnal Ekonomi dan Manajemen 15(3), 234-245.
