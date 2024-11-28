@@ -48,9 +48,9 @@ Regresi linier sederhana digunakan untuk menganalisis hubungan antara satu varia
 
 ### Model Regresi Linier Sederhana
 Model regresi linier sederhana dapat dituliskan sebagai:
-
-            Y = β₀ + β₁X + ϵ 
-
+           <p align="center" width="100%">
+    <img width="100%" src="https://github.com/YuniaHasnataeni/Tugas-Dashboard/blob/main/Gambar/modelhd.png">
+</p>
 
 Di mana:
 - **Y** = Variabel dependen (terikat)
