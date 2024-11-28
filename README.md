@@ -121,11 +121,11 @@ Dataset ini dapat diakses melalui [tautan ini](https://www.kaggle.com/datasets/s
 ---
 
 
-## :linkk: Demo
+## :link: Demo
 
 Berikut merupakan link untuk shinnyapps atau dashboard dari project kami:
 
-https://rismandwij.shinyapps.io/AsosiasiDuaPeubahKategorik/
+
 
 
 ## :bookmark_tabs: Referensi
