@@ -4,7 +4,7 @@
 
 <div align="center">
             
-# Statistika Deskriptif - Regresi Linier Sederhana - Analisis Tren
+# Penjualan Produk Susu
 
 [Tentang](#information_source-tentang)
 •
