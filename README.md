@@ -16,7 +16,7 @@
 •
 [Referensi](#bookmark_tabs-Referensi)
 •
-[Tim Pengembang](#busts_in_silhouette-tim)
+[Tim Pengembang](#busts_in_silhouette-tim-pengembang)
 •
 
 </div>
