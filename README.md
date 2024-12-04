@@ -8,7 +8,7 @@
 
 [Tentang](#information_source-tentang)
 •
-[Library](#blue_book-Library_yang_Digunakan)
+[Library](#blue_book-library-yang-digunakan)
 •
 [Dataset](#bar_chart-Dataset)
 •
