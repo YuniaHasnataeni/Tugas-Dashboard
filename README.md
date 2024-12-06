@@ -156,7 +156,7 @@ Dataset ini dapat diakses melalui [tautan ini](https://www.kaggle.com/datasets/s
 
 # :link: Demo
 
-Berikut merupakan link untuk shinnyapps atau dashboard dari project kami: [tautan ini](https://yunia-hasnataeni.shinyapps.io/Tugas-Visdat-Kelompok4/).
+Berikut merupakan link untuk shinnyapps atau dashboard dari project kami: [tautan ini](https://mds7.shinyapps.io/dashboad-Sales-kelompok4/).
 
 ---
 
